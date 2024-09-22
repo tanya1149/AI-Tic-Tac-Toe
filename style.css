@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'font-1';
+    src:url('fonts/AstroSpace-eZ2Bg.ttf');
+}
+@font-face {
+    font-family: 'font-2';
+    src:url('fonts/MandatoryPlaything-nRRd0.ttf');
+}
+@font-face {
+    font-family: 'font-3';
+    src:url('fonts/Revamped-X3q1a.ttf');
+}
+@font-face {
+    font-family: 'font-4';
+    src:url('fonts/Squaresharps-D663.ttf');
+}
+body{
+    text-align:center;
+    font-family: 'font-2';
+    font-size:1vw;
+    background-image: url("images/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.start_menu{
+    width:35vw;
+    padding: 25px;
+    border: 10px solid #99FFFF;
+    border-radius:10px;
+    margin: auto;
+    margin-top:100px;
+    margin-bottom:35px;
+    text-align: center;
+    box-shadow: 5px 10px 8px #888888;
+}
+.start_menu h2{
+    padding: 10px;
+    background-color: #5A8BCE;
+    box-shadow: 3px 3px 6px #0B3A97;
+}
+.start_menu button{
+    font-weight: bold;
+    font-family: 'font-2';
+    background-color: #4ECCB0;
+    border-radius: 8px;
+    margin: 3px;
+    padding: 15px;
+    height: 50px;
+    min-width: 55px;
+    font-size:100%;
+    border: none;
+    -webkit-transition: background-color 500ms; /* Safari */
+    transition: background-color 500ms;
+
+}
+.start_menu button:hover{
+    font-size: 1.5vw;
+    font-weight: bolder;
+    background-color:#ccff33;
+    box-shadow: 0.5px 0.5px 5px black;
+    cursor: pointer; cursor: hand;
+    -webkit-transition: background-color 300ms; /* Safari */
+    transition: background-color 300ms;
+}
+
+.start_playing{
+    display:none;
+    width:35vw;
+    padding: 25px;
+    border: 10px solid #99FFFF;
+    border-radius:10px;
+    font-weight :bold;
+    font-family:font-1;
+    margin: auto;
+    margin-top:40px;
+    margin-bottom:35px;
+    text-align: center;
+    box-shadow: 5px 10px 8px #888888;
+}
+.start_playing h2{
+    padding: 10px;
+    background-color: #5A8BCE;
+    box-shadow: 3px 3px 6px #0B3A97;
+}
+.start_playing button{
+    font-weight: bold;
+    font-family: 'font-2';
+    background-color: #4ECCB0;
+    border-radius: 8px;
+    margin: 3px;
+    padding: 15px;
+    height: 50px;
+    min-width: 55px;
+    font-size:100%;
+    border: none;
+    -webkit-transition: background-color 500ms; /* Safari */
+    transition: background-color 500ms;
+
+}
+.start_playing button:hover{
+    font-size: 1.5vw;
+    font-weight: bolder;
+    background-color: #77E0C9;
+    box-shadow: 0.5px 0.5px 5px black;
+    cursor: pointer; cursor: hand;
+    -webkit-transition: background-color 300ms; /* Safari */
+    transition: background-color 300ms;
+}
+.start_playing button.active{
+    border: 2px solid red;
+    background-color: yellow;
+    padding: 13px;
+    -webkit-transition: background-color 500ms; /* Safari */
+    transition: background-color 500ms;
+}
+.start_playing .box{
+    min-width: 7vw;
+    min-height: 7vw;
+    padding: 4px;
+    background: #d5e6eb;
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: font-3;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.start_playing .box:hover {
+    opacity: 0.8;
+}
+.start-playing .score{
+    min-width: 7vw;
+    min-height: 7vw;
+    padding: 2px;
+    background: inherit;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.score-current{
+    min-width: 7vw;
+    padding: 2px;
+    background: #d5e6eb;
+    cursor: pointer;
+    opacity: 0.6;
+    border: 2px solid #77E0C9;
+}
+.buttons button{
+    font-weight: bold;
+    font-family: 'font-2';
+    background-color: #4ECCB0;
+    border-radius: 8px;
+    margin: 3px;
+    padding: 15px;
+    height: 50px;
+    min-width: 55px;
+    font-size:100%;
+    border: none;
+    -webkit-transition: background-color 500ms; /* Safari */
+    transition: background-color 500ms;
+}
+.endgame {
+    display: block;
+    width: 200px;
+    top: 120px;
+    background-color: rgba(205,133,63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+#message{
+    position: absolute;
+    width: 35vw;
+    padding:20px;
+    z-index: 100;
+    left: 50%;
+    top: 47%;
+    font-family: font-2;
+    font-size: 2vw;
+    font-weight: bolder;
+    transform: translate(-50%,-50%);
+    border-radius: 35px;
+    background-color: #5A8BCE;
+    box-shadow: 3px 3px 6px #0B3A97;
+    text-align: center;
+    display: none;
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a1abb5, 0 0 40px #a1abb5, 0 0 50px #a1abb5, 0 0 60px #a1abb5, 0 0 70px #a1abb5;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #4de3de, 0 0 40px #4de3de, 0 0 50px #4de3de, 0 0 60px #4de3de, 0 0 70px #4de3de, 0 0 80px #4de3de;
+    }
+}
+#welcome{
+    font-family:'font-2';
+    font-weight: bold;
+    font-size: 3vw;
+    background-color: inherit;
+}
+#start-game{
+    font-family:'font-2';
+    font-weight: bolder;
+}
+#choose_opponent{
+    display: block;
+}
+#choose_symbol{
+    display:none;
+}
+#choose_level{
+    display:none;
+}
+#start_button{
+    display:none;
+}
+#choose_starting_player{
+    display:none;
+}
+#choose_starting_player_comp{
+    display:none;
+}
