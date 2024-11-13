@@ -27,7 +27,7 @@ Engage the Crew by building an unbeatable Tic Tac Toe game Using Minimax algorit
 
 ### Algorithm 
 - Minimax Algorithm
-![flow2](https://tanya1149.github.io/AI-Tic-Tac-Toe//blob/master/images/c2.png)
+![flow2](https://github.com/tanya1149/AI-Tic-Tac-Toe/blob/main/images/c2.png)
 
 ## Deployed on Github Pages
 * https://tanya1149.github.io/AI-Tic-Tac-Toe/
